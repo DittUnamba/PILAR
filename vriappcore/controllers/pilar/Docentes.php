@@ -319,7 +319,7 @@ class Docentes extends CI_Controller {
 
 		if( $tram->Estado == 2 ) {
 
-			echo '<h4 class="titulo"> Proyecto para Director/Asesor </h4>';
+			echo '<h4 class="titulo"> Proyecto para Asesor </h4>';
 			echo "<b>Tesista(s) :</b> " . $this->dbPilar->inTesistas( $idtram ) . "<br>";
 			echo "<b>Linea de Inv.:</b> " . $this->dbRepo->inLineaInv( $tram->IdLinea ) . "<br>";
 			echo "<b>Escuela Profesional :</b> " . $this->dbRepo->inCarrera( $tram->IdCarrera ) . "<br>";
@@ -537,11 +537,11 @@ class Docentes extends CI_Controller {
 			), $idtram );
 
 			// $mail = $this->dbPilar->inCorreo($tram->IdTesista1); 
-			$msg  = "<b>Saludos</b><br><br>El Director/Asesor que Ud. eligió, ha aceptado su proyecto y en un "
+			$msg  = "<b>Saludos</b><br><br>El Asesor que Ud. eligió, ha aceptado su proyecto y en un "
 				  . "máximo de 48 horas serán sorteados sus jurados";
 
 			//$this->logCorreo( $sess->userId, $mail, "Aceptación de Director", $msg );
-			$this->logTramites( $tram->Id, "Aceptación del Director", $msg );
+			$this->logTramites( $tram->Id, "Aceptación del Asesor", $msg );
 
 			// mensaje y salida con actualizacion de ventana
 			echo "<hr><p>El proyecto <b>$tram->Codigo</b> Ha sido enviado para sorteo. Gracias por su tiempo.</p><br>";
@@ -557,7 +557,7 @@ class Docentes extends CI_Controller {
 
 
             $mail = $this->dbPilar->inCorreo($tram->IdTesista1);
-			$msg  = "El Director/Asesor ha rechazado su proyecto de tesis "
+			$msg  = "El Asesor ha rechazado su proyecto de tesis "
 				  . "por lo que deberá cambiarlo o coordinar personalmente.";
 
             $this->logCorreo( $sess->userId, $mail, "Rechazo del Director", $msg );
@@ -982,13 +982,13 @@ class Docentes extends CI_Controller {
 
 
 
-        $str = "Se establece en el Art. 149 del Reglamento de Investigación de Grados y Títulos de la UNA Puno que, "
+        $str = "Se establece en el Art. 149 del Reglamento de Investigación de Grados y Títulos de la UNAMBA que, "
              . "aprobado y sustentado el mencionado Borrador de Tesis conformado por el jurado:"
              ;
         $pdf->Ln(7);
 
 
-        $jur = array( "", "Presidente", "Primer Miembro", "Segundo Miembro", "Director/Asesor" );
+        $jur = array( "", "Presidente", "Primer Miembro", "Segundo Miembro", "Asesor" );
         $jur = $jur[$indx];
         $str = $this->dbRepo->inDocente( $sess->userId );
 
@@ -1100,7 +1100,7 @@ class Docentes extends CI_Controller {
         $pdf->Ln(7);
 
 
-        $jur = array( "", "Presidente", "Primer Miembro", "Segundo Miembro", "Director/Asesor" );
+        $jur = array( "", "Presidente", "Primer Miembro", "Segundo Miembro", "Asesor" );
         $jur = $jur[$indx];
         $str = $this->dbRepo->inDocente( $idprof );
 

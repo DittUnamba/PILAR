@@ -3455,7 +3455,7 @@ public function ReporteLaspauALL(){
 
         $pdf->Ln(6);
         $pdf->SetFont( "Arial", "", 10 );
-        $pdf->Cell( 50, 5, "Director / asesor ", 0, 0, "L" );
+        $pdf->Cell( 50, 5, "Asesor ", 0, 0, "L" );
         $pdf->Cell( 100, 5, ": " .toUTF($asesor), 0, 0, "L" );
 
                 
@@ -3506,7 +3506,7 @@ public function ReporteLaspauALL(){
         $pdf->Cell( 50, 5, "Segundo Miembro", 0, 0, "L" );
         $pdf->Cell( 100, 5, ": " .toUTF($jurado3), 0, 1, "L" );
 
-        $pdf->Cell( 50, 5, "Director/Asesor", 0, 0, "L" );
+        $pdf->Cell( 50, 5, "Asesor", 0, 0, "L" );
         $pdf->Cell( 100, 5, ": " .toUTF($jurado4), 0, 1, "L" );
        
         
@@ -3647,7 +3647,7 @@ public function ReporteLaspauALL(){
 
         $pdf->Ln(6);
         $pdf->SetFont( "Arial", "", 10 );
-        $pdf->Cell( 50, 5, "Director / asesor ", 0, 0, "L" );
+        $pdf->Cell( 50, 5, "Asesor ", 0, 0, "L" );
         $pdf->Cell( 100, 5, ": " .toUTF($asesor), 0, 0, "L" );
 
                 
@@ -3698,7 +3698,7 @@ public function ReporteLaspauALL(){
         $pdf->Cell( 50, 5, "Segundo Miembro", 0, 0, "L" );
         $pdf->Cell( 100, 5, ": " .toUTF($jurado3), 0, 1, "L" );
 
-        $pdf->Cell( 50, 5, "Director/Asesor", 0, 0, "L" );
+        $pdf->Cell( 50, 5, "Asesor", 0, 0, "L" );
         $pdf->Cell( 100, 5, ": " .toUTF($jurado4), 0, 1, "L" );
        
         
