@@ -94,7 +94,7 @@ class Web extends CI_Controller {
         $pdf->Cell( 172, 8, toUTF($facultad), 0, 1, "C" );
         $pdf->Cell( 172, 8, toUTF($carrerap), 0, 1, "C" );
 
-        $pdf->Image( "absmain/imgs/", 78, 55, 60 );
+        $pdf->Image( "absmain/imgs/unap.png", 78, 55, 60 );
 
         $pdf->Ln(80);
         $pdf->SetFont( "Arial", "B", 20 );
