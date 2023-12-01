@@ -558,7 +558,7 @@ public function vwLogCordinador(){
 }
 
 // Function de Memorandums
-public function ( $IdTramite )
+public function memosGen($IdTramite)
 {
    $pdf = new GenSexPdf();
    $pdf->SetMargins(20, 10 , 170);
