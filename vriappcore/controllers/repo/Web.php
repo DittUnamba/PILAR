@@ -122,10 +122,10 @@ class Web extends CI_Controller {
 
         $pdf->Ln(17);
         $pdf->SetFont( "Arial", "B", 16 );
-        $pdf->Cell( 172, 6, toUTF("UNA - PUNO"), 0, 1, "C" );
+        $pdf->Cell( 172, 6, toUTF("UNAMBA"), 0, 1, "C" );
         $pdf->Cell( 172, 6, toUTF("2018"), 0, 1, "C" );
 
-        CodeQR( $pdf, 180, 265, "VRI UNA PUNO", 100 );
+        CodeQR( $pdf, 180, 265, "VRIN UNAMBA", 100 );
 
         //-------------------------------------------------------------------------------------
         // Cara 2 : Hoja de Jurados
