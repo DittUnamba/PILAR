@@ -108,7 +108,7 @@ class Admin extends CI_Controller {
     }
     */
 
-    private function logCorreo( $idUser, $correo, $titulo, $mensaje )
+    private function logCorreo( $idUser, $correo, $, $mensaje )
     {
         if( !$correo ) return;
 

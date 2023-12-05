@@ -1,6 +1,6 @@
 <!--
 --  Vicerrectorado de Investigación
---  Universidad Nacional del Altiplano
+--  
 --  ----------------------------------
 --
 --  Sitio Web Setiembre 2020 - version SSL/TLS
@@ -97,7 +97,7 @@
                     <a href="/cursos" class="btnMnx"> <i class="fa fa-bell"></i><br> Cursos & Eventos </a>
                 </div>
                 <div class="col-md-2 col-sm-6">
-                    <a href="/pilar/sustentas" class="btnMnx"> <i class="fa fa-fax"></i><br> Sustentaciones </a>
+                    <a href="/pilar/" class="btnMnx"> <i class="fa fa-fax"></i><br> Sustentaciones </a>
                 </div>
                 <div class="col-md-2 col-sm-6">
                     <a href="repositorio.unap.edu.pe" class="btnMnx"> <i class="fa fa-book"></i><br> Repositorio </a>
